@@ -4,12 +4,12 @@ import Script from "next/script";
 
 export default function FirstPost() {
   return (
-    <>
+    <Layout>
       <Head>
         <title>First Post Head</title>
       </Head>
       <h1>First Post</h1>
       <h2><Link href="/">Home Page</Link></h2>
-    </>
+    </Layout>
   );
 }
