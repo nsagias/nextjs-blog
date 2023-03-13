@@ -1,9 +1,14 @@
 import Head from "next/head";
 import Layout, { siteTitle } from "../components/layout";
 import utilStyles from "../styles/utils.module.css";
-import {} from "../lib/posts";
+import { getSortedPostData } from "../lib/posts";
 
-
+export async function getStaticProps() {
+  const allPostsData = getSortedPostData();
+  return {
+    props: { allPostsData }
+  };
+}
 
 
 
