@@ -8,6 +8,7 @@ const name = "nick"
 export const siteTitle = "Nextjs Sample Website";
 
 export default function Layout({ children, home }) {
+  console.log("HOME:", home);
   return (
     <div className={styles.container}>
       <Head>
