@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Layout, { siteTitle } from "../components/Layout/layout";
 import utilStyles from "../styles/utils.module.css";
-import { getSortedPostData } from "../Services/posts";
+import { getSortedPostData } from "../Services/postsServices";
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostData();
