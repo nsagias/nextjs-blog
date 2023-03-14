@@ -1,9 +1,9 @@
-import Layout from '../../components/layout';
-import { getAllPostIds } from "../../Services/posts";
-import { getPostData } from '../../Services/postsServices';
+import Layout from '../../components/Layout/layout';
+import { getAllPostIds } from "../../Services/postsService";
+import { getPostData } from '../../Services/postsService';
 
 export async function getStaticPaths() {
-  const path = getAllPostIds();
+  const paths = getAllPostIds();
   return {
     paths,
     fallback: false,
